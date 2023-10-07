@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezi-Obi Global Services LLC</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images v2/Logo2.png" id="resizable-image"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="freight quote.html">FREIGHT QUOTE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Ezi-Obi Global Services</h1>
+            <p>Your Trusted Source in Supply Chain Management & Shipping Logistics.</p>
+            <a href="services.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+        <video autoplay loop muted>
+            <source src="images\Video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        
+    </section>
+
+<!---------- services we offer ----------->
+
+    <section class="course">
+        <h1>Services We Offer</h1>
+        <div class="row">
+            <div class="course-col gold-trim">
+                <h3>Procurement</h3>
+                
+            </div>
+            <div class="course-col gold-trim">
+                <h3>Logistics</h3>
+               
+            </div>
+            <div class="course-col gold-trim">
+                <h3>Consultation</h3>
+                
+            </div>
+            <div class="course-col gold-trim">
+                <h3>Supply Chain Management</h3>
+            </div>
+            <div class="course-col gold-trim">
+                <h3>Project Management</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+<!------ Call To Action ------>
+
+<section class="cta">
+
+       <h1>Are you ready to work with our expert team?</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+
+</section>
+
+<!-------- footer ---------->
+
+<section class="footer">
+       
+    <p>made with <i class="fa fa-heart-o"></i> by EmmaWeb</p>
+</section>
+
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

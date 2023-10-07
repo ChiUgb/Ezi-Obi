@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezi-Obi Global Services LLC</title>
+<link rel="stylesheet" href="freightquote_style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images v2/Logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="freight quote.html">FREIGHT QUOTE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Get A Quote from Us</h1>
+    </section>
+
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Fill out the form to view the rates of
+                            our multimodal shipment options.</h5>
+
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact-col">
+                    <form action="https://formspree.io/f/xyyqbawl"
+                    method="POST">
+
+                    <input type="location" name="PickupLocation" placeholder="Pickup City and State, or Postal Code*" required>
+                    <input type="date" name="PickupDate" placeholder="Pickup Date" required>
+                    <input type="weight" name="ShippingWeight" placeholder="Total Shipping Weight (lbs)" required>
+                    <input type="location" name="DeliveryLocation" placeholder="Delivery City and State, or Postal Code*" required>
+                    <input type="email" name="BusinessEmail" placeholder="Business Email" required>
+                    <input type="name" name="ClientFullName" placeholder="Full Name" required>
+                    <input type="weight" name="AnnualShipVolume" placeholder="Estimated Annual Shipping Volume">
+                    <input type="question" name="FirstTimeImporter" placeholder="Are you a first time importer?(Yes/No)" required>
+                    <input type="question" name="PersonalShipment" placeholder="Is this a personal shipment?(Yes/No)" required>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Ocean Freight">
+                    <label for="vehicle1"> Ocean Freight(FCL)</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Ocean Freight">
+                    <label for="vehicle2"> Ocean Freight(LCL)</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Air Freight" >
+                    <label for="vehicle3"> Air Freight</label><br>
+                    <input type="checkbox"id="vehicle4"name="vehicle4" value="Uncontainerizable Cargo">
+                    <label for="vehicle4">Uncontainerizable Cargo</label><br>
+                    <input type="checkbox"id="vehicle5"name="vehicle5" value="Domestic">
+                    <label for="vehicle5">Domestic Only</label><br>
+                    <input type="service" name="serviceType" placeholder="Service Type" required>
+                    <input type="service" name="TermsOfService" placeholder="Terms of Sale" required>
+                    <input type="location" name="PointPortOrigin" placeholder="Point/Port of Origin" required>
+                    <input type="date" name="ShipmentDate" placeholder="Expected Ship Date" required>
+                    <input type="checkbox"id="PSIterms"name="terms" value="Psi Terms and Conditions" required>
+                    <label for="Agreeterms">I agree to the PSi terms and Conditions*</label><br>
+
+                    <button type="submit" class="hero-btn red-btn">Submit for a Quote</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+  <!-------- footer ---------->
+
+  <section class="footer">
+        <p>made with <i class="fa fa-heart-o"></i> by EmmaWeb</p>
+  </section>
+
+
+  <!----JavaScript for toggle menu---->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+  </script>
+
+  </body>
+  </html>
