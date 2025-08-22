@@ -47,7 +47,7 @@ nav{
     z-index: 1;
 }
 nav img{
-    width: 135px;
+    width: 155px;
 }
 .nav-links{
     flex: 1;
@@ -414,15 +414,15 @@ h3{
     color: #7325fa;
 }
 .hero-btn.red-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #7325fa;
+    background: #7325fa;
     color: #fff;
 }
 .hero-btn.red-btn::after{
-    background: #f44336;
+    background: #7325fa;
 }
 .hero-btn.red-btn::before{
-    background: #f44336;
+    background: #7325fa;
 }
 .content-image{
     flex-basis: 50%;
